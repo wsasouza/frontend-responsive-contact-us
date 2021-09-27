@@ -49,8 +49,13 @@
                 <input type="email" placeholder="jose@email.com">
               </div>
               <div class="inputBox">
-                <span>Celular</span>
-                <input type="text" placeholder="(16) 9999-9999">
+                <span>Telefone</span>
+                <input 
+                  type="text" 
+                  placeholder="(16) 99999-9999 ou (16)0000-0000"
+                  onblur="mascaraDeTelefone(this)"
+                  onfocus="tiraHifen(this)"
+                >
               </div>
             </div>
 
@@ -137,7 +142,7 @@
       </div>
     </div>
   </div> 
-
+  <script src="/script.js"></script>
 </body>
 
 </html>
